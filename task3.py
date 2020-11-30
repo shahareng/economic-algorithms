@@ -1,4 +1,5 @@
 # Shahar Engel
+# חתימות הפונקציות שלי נראות כך (ולא כמו במטלה) כי גרסת הפייתון שלי לא תומכת בחתימות של המטלה
 
 class Agent:
 
@@ -7,6 +8,7 @@ class Agent:
         self.values = values
 
 
+     # נעזרתי בעמית רן כדי להבין איך לממש את פונקציה זו
     def value(self, option):
         return self.values[option-1]
 
