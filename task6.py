@@ -71,13 +71,18 @@ agent3 = Agent("Rami", [3,5,3])
 agent4 = Agent("Ami", [7,0,0,0])
 agent5 = Agent("Tami", [0,8,0,0])
 agent6 = Agent("Rami", [0,0,4,0])
+agent7 = Agent("Ami", [0,10,20,30,21,31,41,52])
+agent8 = Agent("Tami", [0,31,21,11,43,33,23,53])
 agents1 = [agent1, agent2, agent3]
 agents2 = [agent4, agent5, agent6]
+agents3 = [agent7, agent8]
 num1 = 3
 num2 = 4
+num3 = 8
+vcg(agents3, num3)
 #vcg(agents1, num1)
 #vcg(agents2,num2)
 
 # call the testmod function
-if __name__ == '__main__':
-    testmod(name='vcg', verbose=True)
+#if __name__ == '__main__':
+#    testmod(name='vcg', verbose=True)
