@@ -13,7 +13,7 @@ class Uniform:
 
 def max_revenue_auction1(agent1, value1): #agent1: Uniform, value1:float
     '''
-    >>> max_revenue_auction1(Uniform(10,30), 15)
+    >>> max_revenue_auction1(Uniform(10,30), 17)
     Agent chosen and pays 15
     ok
     >>> max_revenue_auction1(Uniform(20,40), 20.91)
@@ -27,8 +27,8 @@ def max_revenue_auction1(agent1, value1): #agent1: Uniform, value1:float
     high = agent1.high
     treshold = high/2;
     rv = (2*value1)-high
-    if rv >= 0:
-        print("{} {}".format("Agent chosen and pays", treshold))
+    if rv > 0:
+        print("Agent chosen and pays " + str(treshold))
     else:
         print("Agent doesn't chosen")
 
@@ -58,10 +58,10 @@ def max_revenue_auction2(agent1, agent2, value1, value2): #agent1: Uniform, agen
         print("No agent wins")
     elif rv1 > rv2 and rv1 > 0:
         pay = max(treshold1, (high1+rv2)/2)
-        print("{} {}".format("Agent 1 wins and pays", pay))
+        print("Agent 1 wins and pays " + str(pay))
     elif rv2>rv1 and rv2 > 0:
         pay = max(treshold2, (high2 + rv1)/2)
-        print("{} {}".format("Agent 2 wins and pays", pay))
+        print("Agent 2 wins and pays " + str(pay))
 
 
 #main
