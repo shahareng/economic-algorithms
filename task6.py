@@ -79,10 +79,10 @@ agents3 = [agent7, agent8]
 num1 = 3
 num2 = 4
 num3 = 8
-vcg(agents3, num3)
+# vcg(agents3, num3)
 #vcg(agents1, num1)
 #vcg(agents2,num2)
 
 # call the testmod function
-#if __name__ == '__main__':
-#    testmod(name='vcg', verbose=True)
+if __name__ == '__main__':
+   testmod(name='vcg', verbose=True)
