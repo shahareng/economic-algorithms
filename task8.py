@@ -17,6 +17,8 @@ def max_revenue_auction1(agent1, value1): #agent1: Uniform, value1:float
     Agent chosen and pays 20
     >>> max_revenue_auction1(Uniform(10,30), 10)
     Agent doesn't chosen
+    >>> max_revenue_auction1(Uniform(30,50), 34.5)
+    Agent chosen and pays 30
     """
 
     high = agent1.high
